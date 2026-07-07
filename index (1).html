@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commonwealth · Clawson · Coming August 2026</title>
+<meta name="description" content="Clawson is a town where people care and get involved. Commonwealth makes it easier for more people to be part of the things they care about. Coming August 2026.">
+<meta property="og:title" content="Commonwealth · Clawson">
+<meta property="og:description" content="A town where people care. We are making it easier for more people to be part of the things they care about. Clawson, Michigan. Coming August 2026.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joincommonwealth.org">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF7F0; --card:#FFFFFF; --ink:#1A2327; --navy:#15233A;
+    --teal:#125049; --tealtint:#E2ECE8; --gold:#A8762A; --goldtint:#F4E9D2;
+    --sagetint:#EDF2EC; --line:#DDD6C8; --line2:#C9BFA9; --mut:#5C6660;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:'Public Sans',system-ui,sans-serif;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;display:flex;flex-direction:column;
+  }
+  .serif{font-family:'Newsreader',Georgia,serif}
+  .mono{font-family:'Spline Sans Mono',monospace}
+  a{color:var(--teal)}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+  .wrap{width:100%;max-width:660px;margin:0 auto;padding:0 24px;flex:1;display:flex;flex-direction:column}
+  .top{padding:34px 0 0;display:flex;align-items:center;gap:10px}
+  .mark{width:30px;height:30px;border-radius:8px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex:none}
+  .mark span{font-family:'Newsreader',Georgia,serif;color:var(--goldtint);font-weight:600;font-size:17px;line-height:1}
+  .wordmark{font-family:'Newsreader',Georgia,serif;font-weight:600;font-size:18px;color:var(--navy)}
+  .badge{margin-left:auto;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);background:var(--tealtint);border-radius:20px;padding:5px 12px;font-weight:600}
+  .hero{padding:52px 0 8px}
+  .place{font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px}
+  h1{
+    font-family:'Newsreader',Georgia,serif;font-weight:500;
+    font-size:clamp(31px,5.6vw,46px);line-height:1.14;color:var(--navy);
+    letter-spacing:-0.01em;max-width:20ch;
+  }
+  .body-copy{margin-top:26px;max-width:54ch}
+  .body-copy p{font-size:clamp(16px,2.2vw,18px);color:var(--ink);line-height:1.6}
+  .body-copy p + p{margin-top:16px}
+  .body-copy strong{font-weight:600;color:var(--navy)}
+  .whole{margin-top:32px;background:var(--sagetint);border:1px solid #C6D6C6;border-radius:14px;padding:20px 22px}
+  .whole .wl{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#4d6b4d;font-weight:600;margin-bottom:9px}
+  .whole p{font-size:15px;color:#33402f;line-height:1.6}
+  .whole p strong{color:#22301f;font-weight:600}
+  .signup{margin-top:34px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px}
+  .signup h2{font-family:'Newsreader',Georgia,serif;font-weight:600;font-size:21px;color:var(--navy);line-height:1.25}
+  .signup .sd{font-size:14.5px;color:var(--mut);margin-top:7px;line-height:1.55}
+  .form{margin-top:16px;display:flex;gap:9px;flex-wrap:wrap}
+  .form input[type=email]{
+    flex:1;min-width:200px;font-family:inherit;font-size:15.5px;color:var(--ink);
+    background:var(--paper);border:1.5px solid var(--line2);border-radius:11px;padding:13px 15px;
+  }
+  .form input[type=email]::placeholder{color:#9A9488}
+  .form button{
+    font-family:inherit;font-size:15.5px;font-weight:600;color:#fff;background:var(--teal);
+    border:0;border-radius:11px;padding:13px 22px;cursor:pointer;white-space:nowrap;
+    transition:background .15s ease;
+  }
+  .form button:hover{background:#0d3f39}
+  .promise{font-size:13px;color:var(--mut);margin-top:13px;line-height:1.5;display:flex;gap:8px;align-items:flex-start}
+  .promise svg{flex:none;width:15px;height:15px;stroke:var(--teal);fill:none;stroke-width:2;margin-top:2px}
+  .note{margin-top:26px;padding:18px 20px;border-left:3px solid var(--gold);background:var(--goldtint)}
+  .note p{font-size:14px;color:#5d4a1e;line-height:1.6}
+  .note p strong{color:#4a3a12;font-weight:600}
+  footer{margin-top:auto;padding:38px 0 44px}
+  .know{font-family:'Newsreader',Georgia,serif;font-weight:600;font-size:19px;color:var(--navy);margin-bottom:14px}
+  .foot-lines{font-size:12.5px;color:var(--mut);line-height:1.65;max-width:58ch}
+  .foot-lines .support{color:var(--ink)}
+  @media (max-width:520px){
+    .hero{padding:42px 0 8px}
+    .form button{flex:1}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="mark" aria-hidden="true"><span>C</span></div>
+    <div class="wordmark">Commonwealth</div>
+    <div class="badge">Coming August 2026</div>
+  </header>
+  <main class="hero">
+    <div class="place">Clawson, Michigan</div>
+    <h1 class="serif">Keeping up with your town shouldn't be this hard.</h1>
+    <div class="body-copy">
+      <p>People in Clawson care about the place they live. The hard part is keeping up with it. What is happening is spread across meeting portals, social feeds, flyers, and PDFs, and by the time you find the thing you cared about, the moment to weigh in or show up has often passed.</p>
+      <p><strong>Commonwealth is one clear, plain-language place</strong> to see what is happening, follow the few things you care about most, and know how to take part while there is still time.</p>
+    </div>
+    <div class="whole">
+      <div class="wl">Why Clawson</div>
+      <p>Clawson is the little city with a big heart, a place where people show up for each other. That is why we are starting here. <strong>Commonwealth covers the whole of the town's life:</strong> what the city is deciding, what is happening at the library, the schools, and the senior center, the town's history, and the local groups doing steady, quiet work. The things that make a town a town, easier to find and easier to be part of.</p>
+    </div>
+
+    <div class="whole">
+      <div class="wl">For the people who keep it going</div>
+      <p>So much of a town runs on a few stretched people: staff, volunteers, coaches, organizers. They already do the work. <strong>Commonwealth exists to help more of the town find it,</strong> with each group posting in its own name, for free, and nothing new to learn or maintain. As we build, we are sitting down with Clawson's institutions one at a time, so this fits the way they actually work.</p>
+    </div>
+    <section class="signup" aria-labelledby="signup-h">
+      <h2 id="signup-h" class="serif">Be the first to know when it opens.</h2>
+      <p class="sd">Leave your email and we will tell you when Commonwealth opens in Clawson. That is the only thing we will use it for.</p>
+      <form
+        class="form"
+        action="https://buttondown.email/api/emails/embed-subscribe/USERNAME"
+        method="post"
+        target="_blank"
+      >
+        <input type="email" name="email" id="bd-email" placeholder="you@example.com" autocomplete="email" aria-label="Your email address" required>
+        <button type="submit">Notify me</button>
+      </form>
+      <p class="promise">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>No tracking, no ads, no selling your address. One message when it opens, and only the weekly update after that if you want it. Leave anytime.</span>
+      </p>
+    </section>
+    <div class="note">
+      <p><strong>A note on what this is.</strong> Commonwealth is an independent, nonprofit community project, free for residents and built to run lean. We are in the early stages of setting up the nonprofit that will support this work for the long run. Clawson is first, and Clawson is home. In time, we hope what starts here can help other small towns with big hearts.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="know serif">Know the place you live.</div>
+    <p class="foot-lines">
+      <span class="support">Anyone can support it. Everyone sees the same record.</span><br>
+      Commonwealth is an independent community project, not affiliated with the City of Clawson.
+    </p>
+  </footer>
+</div>
+</body>
+</html>
